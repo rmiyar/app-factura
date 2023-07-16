@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WebApp de Facturación</title>
+  <!-- Agrega aquí tus enlaces a hojas de estilo CSS y archivos JavaScript si es necesario -->
+  <style>
+    /* Estilos CSS para  la barra de navegacion */
+    .navbar {
+      background-color: #f8f8f8;
+      padding: 10px;
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    .navbar li {
+      display: inline-block;
+    }
+    
+    .navbar li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+    }
+    
+    /* Estilos CSS para el contenedor */
+    .container {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Codiho html para la barra de navegacion -->		
+<div class="navbar">
+  <ul>
+    <li><a href="#">Crear factura</a></li>
+    <li><a href="listado_facturas.php">Ver facturas</a></li>
+  </ul>
+</div>
+<!-- aqui termino con la barrad de navegacion  -->	
+	
+	
+	
+<div class="container">
+ <form action="guardar_factura.php" method="POST"  onsubmit="calcularTotal()">  <!-- aqui inicia el formulario de factura con una funcion javascript embebida    calcularTotal -->	
+    <h2>Factura</h2>
+	 <div>
+		 <label for="Num_factura">Numero factura:</label>
+		 <input type="text" id="Num_factura" name="Num_factura" required>
+
+		 <label for="nombre">Nombre de la empresa:</label>
+		 <input type="text" id="nom_empresa" name="nom_empresa" required>
+
+		 <label for="direccion">Direccion:</label>
+		 <input type="text" id="direccion" name="direccion" required>
+
+		<label for="telefono">telefono:</label>
+		<input type="text" id="telefono" name="telefono" required>
+		 
+	  </div>
+	  <br>
+	  <div>
+		 <label for="cod_cli">codigo cliente:</label>
+		 <input type="text" id="cod_cli" name="cod_cli" required>
+
+		 <label for="nom_cli">nombre cliente</label>
+		 <input type="text" id="nom_cli" name="nom_cli" required>
+
+	  </div>
+	  <br>
+
+    <table>
+		  <tr>
+			<th>Descripcion del servicio</th>
+			<th>Precio unitario</th>
+			<th>Cantidad</th>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="descripcion" ></td>
+			<td><input type="number"  step="0.01" name="precio" oninput="calcularTotal()" ></td>
+			<td><input type="number" name="cantidad" oninput="calcularTotal()"></td>
+		  </tr>
+		  <tr>
+			<th>otros servicios</th>
+		  </tr>
+			<tr>
+			<td><input type="text" name="otros" ></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+			 <th>sub-total</th>
+			 <th>i.t.b.m</th>
+			 <th>total a pagar</th>
+		  </tr>
+			<tr>
+			<td><input type="number" name="subtotal" readonly></td>
+			<td><input type="number" name="itbm" readonly></td>
+			<td><input type="number" name="total" readonly></td>
+		  </tr>
+    </table>
+    <button type="submit">Generar factura</button>
+  </form><!-- aqui termina el formulario de factura  -->			
+</div>
+ 
+  
+<!--Codigo javascript para realizar el calculo del lado de la pantalla  o frontend -->
+	
+<script>
+  function calcularTotal(numero) {
+    // Obtener los valores ingresados en los campos correspondientes
+    var precio = parseFloat(document.querySelector('input[name="precio"]').value);
+    var cantidad = parseFloat(document.querySelector('input[name="cantidad"]').value);
+	  
+
+	  
+	// Calculo del sub-total
+	var subtotal = precio * cantidad
+	
+	  
+	// Calculo del itbm 
+	var itbm = subtotal  * 0.07
+	var itbmDecimal = itbm.toFixed(2); // Redondear a dos decimales
+	  
+   // Totalizador de  subtotal + itbm para el total a pagar 
+	var total = (subtotal  + itbm)
+	var totaldecimal = total.toFixed(2); // Redondear a dos decimales
+	  
+
+    // Mostrar el resultado en el campo total correspondiente
+	document.querySelector('input[name="itbm"]').value = itbmDecimal;
+	document.querySelector('input[name="subtotal"]').value = subtotal;
+	document.querySelector('input[name="total"]').value = totaldecimal;
+	   
+	  
+  }	
+</script>
+</body>
+</html>

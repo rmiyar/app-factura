@@ -1,0 +1,47 @@
+2019-07-24T04:33:49.785040Z 0 [System] [MY-010116] [Server] C:\AppServ\MySQL\bin\mysqld (mysqld 8.0.17) starting as process 11148
+2019-07-24T04:33:51.226362Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-07-24T04:33:51.259491Z 0 [System] [MY-010931] [Server] C:\AppServ\MySQL\bin\mysqld: ready for connections. Version: '8.0.17'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2019-07-24T04:33:51.467508Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2019-07-24T04:36:02.411584Z 11 [Warning] [MY-013360] [Server] Plugin sha256_password reported: ''sha256_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
+2019-07-24T04:38:34.324856Z 0 [System] [MY-013105] [Server] C:\AppServ\MySQL\bin\mysqld: Normal shutdown.
+2019-07-24T04:38:34.588565Z 0 [System] [MY-010910] [Server] C:\AppServ\MySQL\bin\mysqld: Shutdown complete (mysqld 8.0.17)  MySQL Community Server - GPL.
+2019-07-24T08:05:36.864177Z 0 [System] [MY-010116] [Server] C:\AppServ\MySQL\bin\mysqld (mysqld 8.0.17) starting as process 13144
+2019-07-24T08:05:38.188969Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-07-24T08:05:38.212699Z 0 [System] [MY-010931] [Server] C:\AppServ\MySQL\bin\mysqld: ready for connections. Version: '8.0.17'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2019-07-24T08:05:38.230588Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2019-07-24T08:08:05.050156Z 0 [System] [MY-013105] [Server] C:\AppServ\MySQL\bin\mysqld: Normal shutdown.
+2019-07-24T08:08:05.598166Z 0 [System] [MY-010910] [Server] C:\AppServ\MySQL\bin\mysqld: Shutdown complete (mysqld 8.0.17)  MySQL Community Server - GPL.
+2023-07-15T03:02:21.171335Z 0 [System] [MY-010116] [Server] C:\AppServ\MySQL\bin\mysqld (mysqld 8.0.17) starting as process 12164
+2023-07-15T03:02:23.152692Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-07-15T03:02:23.195760Z 0 [System] [MY-010931] [Server] C:\AppServ\MySQL\bin\mysqld: ready for connections. Version: '8.0.17'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-07-15T03:02:23.209699Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-07-15T03:02:24.504662Z 9 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.17).
+2023-07-15T03:02:24.507768Z 0 [System] [MY-013105] [Server] C:\AppServ\MySQL\bin\mysqld: Normal shutdown.
+2023-07-15T03:02:25.150105Z 0 [System] [MY-010910] [Server] C:\AppServ\MySQL\bin\mysqld: Shutdown complete (mysqld 8.0.17)  MySQL Community Server - GPL.
+2023-07-15T03:02:42.529329Z 0 [System] [MY-010116] [Server] C:\AppServ\MySQL\bin\mysqld (mysqld 8.0.17) starting as process 19732
+2023-07-15T03:02:44.716302Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-07-15T03:02:44.764651Z 0 [System] [MY-010931] [Server] C:\AppServ\MySQL\bin\mysqld: ready for connections. Version: '8.0.17'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-07-15T03:02:44.966312Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-07-15T05:57:49.821091Z 169 [Warning] [MY-013360] [Server] Plugin sha256_password reported: ''sha256_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
+2023-07-15T05:58:27.382465Z 170 [Warning] [MY-013360] [Server] Plugin sha256_password reported: ''sha256_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
+2023-07-15T16:16:06.591715Z 0 [System] [MY-010116] [Server] C:\AppServ\MySQL\bin\mysqld (mysqld 8.0.17) starting as process 5108
+2023-07-15T16:16:08.625404Z 0 [System] [MY-010229] [Server] Starting crash recovery...
+2023-07-15T16:16:08.632783Z 0 [System] [MY-010232] [Server] Crash recovery finished.
+2023-07-15T16:16:09.772046Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-07-15T16:16:09.777504Z 0 [ERROR] [MY-010262] [Server] Can't start server: Bind on TCP/IP port: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+
+2023-07-15T16:16:09.777518Z 0 [ERROR] [MY-010257] [Server] Do you already have another mysqld server running on port: 3306 ?
+2023-07-15T16:16:09.782168Z 0 [ERROR] [MY-010119] [Server] Aborting
+2023-07-15T16:16:10.918383Z 0 [System] [MY-010910] [Server] C:\AppServ\MySQL\bin\mysqld: Shutdown complete (mysqld 8.0.17)  MySQL Community Server - GPL.
+2023-07-15T18:05:39.494887Z 0 [System] [MY-010116] [Server] C:\AppServ\MySQL\bin\mysqld (mysqld 8.0.17) starting as process 3972
+2023-07-15T18:05:41.949444Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-07-15T18:05:42.044924Z 0 [System] [MY-010931] [Server] C:\AppServ\MySQL\bin\mysqld: ready for connections. Version: '8.0.17'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-07-15T18:05:42.326713Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-07-15T18:06:01.935352Z 0 [System] [MY-013105] [Server] C:\AppServ\MySQL\bin\mysqld: Normal shutdown.
+2023-07-15T18:06:03.459144Z 0 [System] [MY-010910] [Server] C:\AppServ\MySQL\bin\mysqld: Shutdown complete (mysqld 8.0.17)  MySQL Community Server - GPL.
+2023-07-15T18:19:47.193923Z 0 [System] [MY-010116] [Server] C:\AppServ\MySQL\bin\mysqld (mysqld 8.0.17) starting as process 8640
+2023-07-15T18:19:49.272149Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-07-15T18:19:49.320329Z 0 [System] [MY-010931] [Server] C:\AppServ\MySQL\bin\mysqld: ready for connections. Version: '8.0.17'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-07-15T18:19:49.363959Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-07-15T18:23:06.954621Z 0 [System] [MY-013105] [Server] C:\AppServ\MySQL\bin\mysqld: Normal shutdown.
+2023-07-15T18:23:07.227006Z 0 [System] [MY-010910] [Server] C:\AppServ\MySQL\bin\mysqld: Shutdown complete (mysqld 8.0.17)  MySQL Community Server - GPL.
